@@ -1,0 +1,2 @@
+Installation rechtklick rageMP Dateipfad öffnen
+dateien in Client resources packen bzw in die dort angegebene ip adresse

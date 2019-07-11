@@ -1,0 +1,1 @@
+require('lsfivem/index.js');

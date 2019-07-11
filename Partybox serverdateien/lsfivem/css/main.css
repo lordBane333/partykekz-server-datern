@@ -1,0 +1,86 @@
+		*{ margin: 0; padding: 0;}
+
+		html, body
+		{
+			-webkit-font-smoothing: antialiased;
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+			color: white;
+			font-size: 14px;
+			-webkit-user-select: none;
+		}
+
+		a
+		{
+			text-decoration: none;
+			color: white;
+		}
+
+		.ui_element
+		{
+			display: none;
+			position: absolute;
+			width: 100vw;
+			height: 100vh;
+			z-index: 2;
+		}
+
+		#chat
+		{
+			display: block; z-index: 0; color: white; text-shadow: 1px 1px 0px rgb(0, 0, 0); font-size: 16px; line-height: 30px;
+			text-shadow: 1px 1px 1px black, -1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
+			margin-left: 15px;
+		}
+
+@media screen and (min-height: 1080px) {
+	#chat
+	{
+		font-size: 18px !important;
+		font-weight: bold;
+	}
+}
+
+		#chat ul#chat_messages
+		{
+			overflow: hidden;
+			height: 320px;
+			margin-top: 1vh;
+			transform: rotate(180deg);
+			font-size: 16px;
+			width: 35vw;
+		}
+
+		#chat ul#chat_messages > li
+		{
+			transform: rotate(-180deg);
+		}
+
+		#chat input#chat_msg
+		{
+			color: white;
+			background: rgba(0, 0, 0, 0.5);
+			outline: none;
+			border: none;
+			font-size: 13px;
+			line-height: 35px;
+			width: 35vw;
+			padding: 5px 5px 5px 15px;
+		}
+
+		#chat_channels li
+		{
+			float: left;
+			border: 1px solid black;
+			list-style-type: none;
+			padding: 5px 15px;
+			margin: 5px 5px 0px 0px;
+			text-transform: uppercase;
+			font-size: 13px;
+			text-shadow: none;
+		}
+
+		#chat_channels li#active
+		{
+			color: rgb(165, 69, 165);
+		}
